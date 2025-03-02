@@ -124,6 +124,35 @@ router.put('/:id/status', auth, async (req, res) => {
     console.error(err.message);
     res.status(500).send('Server error');
   }
+
+
+
 });
+
+
+router.post("/request-ride",auth,async(req,res)=>{
+  try {
+    const {pickup,destination}=req.body
+    // const user = new User;
+    // if(user.role!="rider"){
+    //   const rider=req.params.id
+    //   const driver =
+    // }
+    const driver=await User.findOne({ role: "driver" })
+    
+    // const rider=req.user.id
+    const price=Math.random()*100
+    const ride=await Ride.create({pickup,destination,driver,price})
+
+    res.status(201).json({ride})
+
+    
+  } catch (error) {
+    console.error(error.message);
+    res.status(500).send('Server error');
+  }
+})
+
+
 
 module.exports = router;

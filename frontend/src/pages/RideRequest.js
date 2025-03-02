@@ -34,8 +34,9 @@ const RideRequest = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Map Section */}
-          <div className="bg-gray-300 rounded-lg min-h-[400px] md:min-h-[600px] flex items-center justify-center">
-            <p className="text-gray-600">Map will be integrated here</p>
+          <div className="bg-gray-300 rounded-lg flex items-center justify-center">
+            <img src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg" className='h-full w-full'></img>
+            
           </div>
 
           {/* Ride Request Form */}

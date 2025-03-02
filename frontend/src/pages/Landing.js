@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 const Landing = () => {
   return (
-    <div className="min-h-screen bg-black flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-black flex flex-col justify-start overflow-y-auto">
       {/* Hero Section */}
       <div className="relative overflow-hidden mt-20">
         <div className="max-w-7xl mx-auto">
@@ -77,6 +78,7 @@ const Landing = () => {
                 Get a ride whenever you need, wherever you are.
               </p>
             </div>
+            
 
             {/* Affordability Feature */}
             <div className="text-center">
@@ -93,6 +95,39 @@ const Landing = () => {
           </div>
         </div>
       </div>
+
+      {/* About Us Section */}
+      <div className="py-16 bg-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="lg:text-center">
+            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+              About RideConnect
+            </h2>
+            <p className="mt-4 max-w-2xl text-xl text-gray-300 lg:mx-auto">
+              We're revolutionizing the way people move. Our mission is to create reliable, affordable, and safe transportation accessible to everyone.
+            </p>
+          </div>
+          
+          <div className="mt-10">
+            <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+              <div className="text-white">
+                <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
+                <p className="text-gray-300">
+                  To transform transportation by connecting people with reliable rides and creating opportunities for drivers to grow their businesses.
+                </p>
+              </div>
+              
+              <div className="text-white">
+                <h3 className="text-2xl font-bold mb-4">Our Values</h3>
+                <p className="text-gray-300">
+                  We believe in transparency, safety, and community. Every decision we make is guided by our commitment to creating positive experiences for both riders and drivers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };
