@@ -8,7 +8,6 @@ A full-stack Uber clone built using the MERN (MongoDB, Express.js, React.js, Nod
 - Real-time location tracking
 - Ride requesting system
 - Driver mode
-- Google Maps integration
 - Real-time notifications using Socket.IO
 
 ## Prerequisites
@@ -37,7 +36,6 @@ npm install
 ```
 MONGODB_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
-GOOGLE_MAPS_API_KEY=your_google_maps_api_key
 ```
 
 4. Start the development servers:
