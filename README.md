@@ -56,14 +56,12 @@ The frontend will run on http://localhost:3000 and the backend on http://localho
   - React.js
   - Redux Toolkit
   - Tailwind CSS
-  - Google Maps API
-  - Socket.IO Client
+    
 
 - Backend:
   - Node.js
   - Express.js
   - MongoDB
-  - Socket.IO
   - JWT Authentication
 
 ## License
